@@ -1,0 +1,23 @@
+
+xkb_symbols   {
+	include "pc+us+ru:2+inet(evdev)"
+	include "capslock(ctrl_modifier)"
+
+	include "level3(ralt_switch)"
+
+	key <AD07> { [ u, U, Home, Home ], type[Group1]="THREE_LEVEL" };
+	key <AD08> { [ i, I, Up, Up ], type[Group1]="THREE_LEVEL" };
+	key <AD09> { [ o, O, End, End ], type[Group1]="THREE_LEVEL" };
+	key <AD10> { [ p, P, Prior, Prior ], type[Group1]="THREE_LEVEL" };
+
+	key <AC07> { [ j, J, Left, Left ], type[Group1]="THREE_LEVEL" };
+	key <AC08> { [ k, K, Down, Down ], type[Group1]="THREE_LEVEL" };
+	key <AC09> { [ l, L, Right, Right ], type[Group1]="THREE_LEVEL" };
+	key <AC10> { [ semicolon, colon, Next, Next ], type[Group1]="THREE_LEVEL" };
+
+	key <AB06> { [ n, N, Insert, Insert ], type[Group1]="THREE_LEVEL" };
+	//key <AB07> { [ m, M ], type[Group1]="THREE_LEVEL" };
+	//key <AB08> { [ comma, less, Delete, Delete ], type[Group1]="THREE_LEVEL" };
+	key <AB09> { [ period, greater, Delete, Delete ], type[Group1]="THREE_LEVEL" };
+};
+

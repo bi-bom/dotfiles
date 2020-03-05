@@ -1,10 +1,19 @@
+"Включает определение типа файла, загрузку...
+"... соответствующих ему плагинов и файлов отступов
+filetype plugin indent on
 
+set autoread
 set clipboard=unnamedplus
 
+"Ставит кодировку UTF-8
+set encoding=utf-8 
 colorscheme slate
 
+"Включает подсветку синтаксиса
 syntax on
-"filetype plugin indent on
+
+"Отключает обратную совместимость с Vi
+set nocompatible 
 
 vnoremap // y/\V<C-R>=escape(@",'/\')<CR><CR>
 
@@ -27,6 +36,7 @@ call plug#begin()
 	Plug 'plasticboy/vim-markdown'
 call plug#end()
 
+" --- настройка lightline ---
 set laststatus=2
 set noshowmode
 let g:lightline = {

@@ -1,3 +1,4 @@
+set nu
 set lines=48
 
 set guifont=Droid\ Sans\ Mono\ 11

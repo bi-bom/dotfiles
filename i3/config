@@ -255,6 +255,11 @@ bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ to
 # Windows & Borders
 #-----------------------------------------------------------------------------
 
+#title_format "-= %title =-"
+# print all window titles bold
+#for_window [class=".*"] title_format "<b>%class</b>"
+for_window [class=".*"] title_format "   %title"
+
 # Правильное обращение с плавающими диалогами
 for_window [window_role="pop-up"] floating enable
 for_window [window_role="task_dialog"] floating enable
@@ -263,4 +268,10 @@ for_window [class="Eog"] floating enable
 set default_border pixel 3
 #for_window [tiling] border pixel 3
 for_window [class="Pidgin"] floating enable
+
+# print window titles of firefox windows red
+for_window [class="(?i)firefox"] title_format "<span foreground='cyan'>   %title</span>"
+for_window [class="(?i)code"] title_format "<span foreground='cyan'>   %title</span>"
+for_window [class="(?i)doublecmd"] title_format "<span foreground='yellow'>   %title</span>"
+
 

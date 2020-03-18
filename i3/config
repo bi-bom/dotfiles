@@ -152,6 +152,11 @@ bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
 bindsym $mod+Shift+grave move scratchpad
 bindsym $mod+grave scratchpad show
 
+# PrintScreen
+bindsym Print exec gnome-screenshot
+bindsym Shift+Print exec gnome-screenshot -w
+bindsym Control+Print exec gnome-screenshot -i
+
 #-----------------------------------------------------------------------------
 # MODES
 #-----------------------------------------------------------------------------

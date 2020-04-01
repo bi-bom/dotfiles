@@ -156,6 +156,11 @@ bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
 bindsym $mod+Shift+grave move scratchpad
 bindsym $mod+grave scratchpad show
 
+# PrintScreen
+bindsym Print exec gnome-screenshot
+bindsym Shift+Print exec gnome-screenshot -w
+bindsym Control+Print exec gnome-screenshot -i
+
 #-----------------------------------------------------------------------------
 # MODES
 #-----------------------------------------------------------------------------
@@ -274,4 +279,10 @@ for_window [class="Eog"] floating enable
 #default_border pixel 3
 #for_window [tiling] border pixel 3
 for_window [class="Pidgin"] floating enable
+
+# print window titles of firefox windows red
+for_window [class="(?i)firefox"] title_format "<span foreground='cyan'>   %title</span>"
+for_window [class="(?i)code"] title_format "<span foreground='cyan'>   %title</span>"
+for_window [class="(?i)doublecmd"] title_format "<span foreground='yellow'>   %title</span>"
+
 

@@ -57,3 +57,9 @@ map ,v :vsp $MYVIMRC<CR>
 "map ,V :source $MYVIMRC<CR>
 autocmd! bufwritepost ~/.vimrc execute "normal! :source ~/.vimrc"
 
+" в режиме вставки - подчеркивать текущую строку
+autocmd InsertEnter,InsertLeave * set cul!
+"or, alternatively,
+"autocmd InsertEnter * set cul
+"autocmd InsertLeave * set nocul
+

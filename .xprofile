@@ -1,0 +1,3 @@
+
+setxkbmap "us,ru" "us_raltext,ru_raltext,winkeys" "grp:alt_shift_toggle"
+setxkbmap -option ctrl:nocaps

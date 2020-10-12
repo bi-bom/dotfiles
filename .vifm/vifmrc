@@ -53,7 +53,7 @@ set novimhelp
 " If you would like to run an executable file when you
 " press return on the file name set this.
 
-set norunexec
+" set norunexec
 
 " Use KiB, MiB, ... instead of KB, MB, ...
 
@@ -344,6 +344,8 @@ set vifminfo=dhistory,savedirs,chistory,state,tui,shistory,
     \phistory,fhistory,dirstack,registers,bookmarks
 
 " ------------------------------------------------------------------------------
+set columns=120
+" ------------------------------------------------------------------------------
 
 " Examples of configuring both panels
 
@@ -408,6 +410,19 @@ nnoremap <f5> :copy<cr>
 nnoremap <f6> :move<cr>
 nnoremap <f7> :mkdir<space>
 nnoremap <f8> :delete<cr>
+
+" удаление без корзины
+nnoremap <s-f8> DD<cr>
+" запуск консоли в текущей папке
+nnoremap <f9> :shell<cr>
+" выделить и перейти к следующему файлу
+nnoremap <space> tj
+" переход на уровень выше клавишей Backspace
+nnoremap <bs> gh
+" установить текущую папку с другой панели
+nnoremap <c-s> :cd %D<cr>
+
+nnoremap <c-\> :!vim -d %f %F<cr>
 
 " ------------------------------------------------------------------------------
 
